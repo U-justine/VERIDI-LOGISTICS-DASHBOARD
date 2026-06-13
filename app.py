@@ -5,6 +5,8 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import warnings
 import os
+print(os.getcwd())
+print(os.listdir("."))
 
 warnings.filterwarnings("ignore")
 
@@ -122,8 +124,6 @@ st.markdown(f"""
 # DATA LOADING
 # ════════════════════════════════════════════════════════════════════════════════
 @st.cache_data
-print(os.getcwd())
-print(os.listdir("."))
 def load_data():
     delivered = pd.read_csv("veridi_delivery_performance.csv", parse_dates=[
         "order_purchase_timestamp",
