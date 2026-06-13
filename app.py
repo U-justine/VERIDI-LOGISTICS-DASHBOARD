@@ -272,7 +272,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
 # Dataset: veridi_delivered_clean.csv
 # ────────────────────────────────────────────────────────────────────────────────
 with tab1:
-    st.markdown('<div class="sec-title"> Dataset 1 — veridi_delivered_clean.csv — Delivery Overview</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sec-title"> Dataset 1 — veridi_delivered_performance.csv — Delivery Overview</div>', unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 1])
 
