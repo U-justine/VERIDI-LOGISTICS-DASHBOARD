@@ -9,7 +9,6 @@ warnings.filterwarnings("ignore")
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Veridi Logistics — Delivery Audit",
-    page_icon="🚚",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -144,7 +143,6 @@ delivered["year"]  = delivered["order_purchase_timestamp"].dt.year.astype(str)
 with st.sidebar:
     st.markdown(f"""
     <div style='text-align:center; padding: 10px 0 18px;'>
-      <div style='font-size:2rem;'>🚚</div>
       <div style='font-size:1rem; font-weight:800; color:white;'>Veridi Logistics</div>
       <div style='font-size:0.72rem; color:{TEAL}; letter-spacing:1px;'>DELIVERY AUDIT DASHBOARD</div>
     </div>
@@ -201,7 +199,7 @@ df = df[df["review_score"].between(score_range[0], score_range[1])]
 # ════════════════════════════════════════════════════════════════════════════════
 st.markdown(f"""
 <div class="top-bar">
-  <h1>🚚 Veridi Logistics — Last Mile Delivery Audit</h1>
+  <h1> Veridi Logistics — Last Mile Delivery Audit</h1>
   <p>Olist Brazilian E-Commerce Dataset &nbsp;·&nbsp; {len(df):,} orders shown &nbsp;·&nbsp; 2017–2018</p>
 </div>
 """, unsafe_allow_html=True)
@@ -259,10 +257,10 @@ st.markdown("<br>", unsafe_allow_html=True)
 # TABS
 # ════════════════════════════════════════════════════════════════════════════════
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📦  Overview",
-    "🗺️  Geographic",
-    "⭐  Sentiment",
-    "🏆  DPRS & Categories"
+    "  Overview",
+    "  Geographic",
+    "  Sentiment",
+    "  DPRS & Categories"
 ])
 
 # ────────────────────────────────────────────────────────────────────────────────
@@ -270,7 +268,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
 # Dataset: veridi_delivered_clean.csv
 # ────────────────────────────────────────────────────────────────────────────────
 with tab1:
-    st.markdown('<div class="sec-title">📦 Dataset 1 — veridi_delivered_clean.csv — Delivery Overview</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sec-title"> Dataset 1 — veridi_delivered_clean.csv — Delivery Overview</div>', unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 1])
 
@@ -430,7 +428,7 @@ with tab1:
 # Dataset: veridi_state_summary.csv
 # ────────────────────────────────────────────────────────────────────────────────
 with tab2:
-    st.markdown('<div class="sec-title">🗺️ Dataset 2 — veridi_state_summary.csv — Geographic Analysis</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sec-title"> Dataset 2 — veridi_state_summary.csv — Geographic Analysis</div>', unsafe_allow_html=True)
 
     # Filter state df by selected states if any
     s_df = state_df.copy()
@@ -532,7 +530,7 @@ with tab2:
 # Dataset: veridi_delivered_clean.csv
 # ────────────────────────────────────────────────────────────────────────────────
 with tab3:
-    st.markdown('<div class="sec-title">⭐ Dataset 1 — veridi_delivered_clean.csv — Customer Sentiment (Story 4)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sec-title"> Dataset 1 — veridi_delivered_clean.csv — Customer Sentiment (Story 4)</div>', unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 1])
 
@@ -658,7 +656,7 @@ with tab3:
 # Datasets: veridi_state_summary.csv + veridi_category_summary.csv
 # ────────────────────────────────────────────────────────────────────────────────
 with tab4:
-    st.markdown('<div class="sec-title">🏆 Datasets 2 & 3 — DPRS Leaderboard & Category Analysis</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sec-title"> Datasets 2 & 3 — DPRS Leaderboard & Category Analysis</div>', unsafe_allow_html=True)
 
     # ── Chart 12: DPRS bar — state leaderboard ────────────────────────────────
     st.markdown('<div class="chart-card">', unsafe_allow_html=True)
@@ -758,7 +756,7 @@ with tab4:
 # LOOKER STUDIO REFERENCE TABLE
 # ════════════════════════════════════════════════════════════════════════════════
 st.markdown("---")
-st.markdown('<div class="sec-title">📋 Looker Studio — Complete X/Y Reference for All 14 Charts</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec-title"> Looker Studio — Complete X/Y Reference for All 14 Charts</div>', unsafe_allow_html=True)
 
 ref_data = {
     "Chart": [
