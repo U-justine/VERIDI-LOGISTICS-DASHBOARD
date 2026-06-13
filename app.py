@@ -121,7 +121,7 @@ st.markdown(f"""
 # ════════════════════════════════════════════════════════════════════════════════
 @st.cache_data
 def load_data():
-    delivered = pd.read_csv("veridi_delivered_clean.csv", parse_dates=[
+    delivered = pd.read_csv("veridi_delivered_performance.csv", parse_dates=[
         "order_purchase_timestamp",
         "order_delivered_customer_date",
         "order_estimated_delivery_date"
