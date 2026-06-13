@@ -808,10 +808,10 @@ ref_data = {
         "Color: DPRS band", "Color: Late_Pct band", "Bubble: Orders",
     ],
     "Dataset": [
-        "delivered_clean","delivered_clean","delivered_clean",
-        "delivered_clean","delivered_clean",
+        "delivered_performance","delivered_performance","delivered_performance",
+        "delivered_performance","delivered_performance",
         "state_summary","state_summary","state_summary",
-        "delivered_clean","delivered_clean","delivered_clean",
+        "delivered_clean","delivered_performance","delivered_performance",
         "state_summary","category_summary","category_summary",
     ],
     "Story": [
