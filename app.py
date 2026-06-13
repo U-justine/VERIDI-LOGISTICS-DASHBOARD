@@ -4,6 +4,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import warnings
+import os
+
 warnings.filterwarnings("ignore")
 
 # ── Page config ───────────────────────────────────────────────────────────────
@@ -120,8 +122,6 @@ st.markdown(f"""
 # DATA LOADING
 # ════════════════════════════════════════════════════════════════════════════════
 @st.cache_data
-import os
-
 print(os.getcwd())
 print(os.listdir("."))
 def load_data():
