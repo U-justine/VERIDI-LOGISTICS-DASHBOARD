@@ -842,5 +842,7 @@ st.markdown(f"""
   Veridi Logistics Delivery Audit Dashboard &nbsp;·&nbsp;
   Olist Brazilian E-Commerce Dataset 2017–2018 &nbsp;·&nbsp;
   Built with Streamlit + Plotly
+  &nbsp;&nbsp; | &nbsp;&nbsp;
+  Created by Justine Umutoni
 </div>
 """, unsafe_allow_html=True)
