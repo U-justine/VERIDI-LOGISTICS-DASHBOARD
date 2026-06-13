@@ -125,13 +125,13 @@ st.markdown(f"""
 # ════════════════════════════════════════════════════════════════════════════════
 @st.cache_data
 def load_data():
-    delivered = pd.read_csv("veridi_delivery_performance.csv", parse_dates=[
+    delivered = pd.read_csv("Data/veridi_delivery_performance.csv", parse_dates=[
         "order_purchase_timestamp",
         "order_delivered_customer_date",
         "order_estimated_delivery_date"
     ])
-    state_df  = pd.read_csv("veridi_state_summary.csv")
-    cat_df    = pd.read_csv("veridi_category_summary.csv")
+    state_df  = pd.read_csv("Data/veridi_state_summary.csv")
+    cat_df    = pd.read_csv("Data/veridi_category_summary.csv")
     return delivered, state_df, cat_df
 
 delivered, state_df, cat_df = load_data()
@@ -531,7 +531,7 @@ with tab2:
 
 # ────────────────────────────────────────────────────────────────────────────────
 # TAB 3 — SENTIMENT
-# Dataset: veridi_delivered_clean.csv
+# Dataset: veridi_deliverey_performance.csv
 # ────────────────────────────────────────────────────────────────────────────────
 with tab3:
     st.markdown('<div class="sec-title"> Dataset 1 — veridi_delivery_performance.csv — Customer Sentiment (Story 4)</div>', unsafe_allow_html=True)
